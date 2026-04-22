@@ -2871,6 +2871,17 @@ document.addEventListener('DOMContentLoaded', () => {
   createBgCircles();
   initForm();
   initFloatBtn();
+
+  // URLハッシュによる直リンク対応
+  const hash = location.hash;
+  if (hash === '#donate-boxlist') {
+    go('donate');
+    setTimeout(() => showDonate('boxlist', false), 50);
+  } else if (hash === '#donate-postal') {
+    go('donate');
+    setTimeout(() => showDonate('postal', false), 50);
+  }
+
   runFadeIn();
 });
 </script>
