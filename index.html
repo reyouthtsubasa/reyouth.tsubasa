@@ -1780,7 +1780,7 @@ a { text-decoration: none; }
             <p>そんな若者が、<strong>自分のペースで働ける場所</strong>をつくりたい。やり直せる場所をつくりたい。</p>
             <p>このショップでは、皆さまからいただいた衣類を販売し、<strong>働くための準備をしている若者の就労の場</strong>として運営しています。</p>
             <p>買って・寄付して・つながることで、若者の「働く」を支えてください。</p>
-            <button class="btn btn-sunset mt24" onclick="go('donate')">👕 寄付してつながる</button>
+            <button class="btn btn-sunset mt24" onclick="go('donate')">寄付してつながる</button>
           </div>
         </div>
       </div>
@@ -1885,8 +1885,7 @@ a { text-decoration: none; }
             <div class="label">YOUNG WORKERS</div>
             <h2 class="section-title">若者が実際に働いています</h2>
             <p class="section-desc mx-auto">
-              REユース つばさでは、若者たちが仕分け・陳列・接客・レジまで担当しています。<br>
-              一つひとつの経験が、自信とスキルになっていきます。
+              REユース つばさでは、若者たちが仕分け・陳列・接客・レジまで担当しています。一つひとつの経験が、自信とスキルになっていきます。
             </p>
           </div>
           <div class="grid-3 worker-cards">
@@ -2157,11 +2156,22 @@ a { text-decoration: none; }
         <div class="donate-cta-grid fi">
           <button class="dcta dcta-ocean" onclick="showDonate('postal')">
             <span class="dcta-icon" style="display:flex;justify-content:center;">
-              <svg class="svg-icon" style="margin-bottom:0;" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect x="12" y="26" width="40" height="28" rx="4" fill="#A8D8F0" stroke="#4A9EC0" stroke-width="2"/>
-                <path d="M12,34 L52,34" stroke="#4A9EC0" stroke-width="1.5"/>
-                <path d="M24,26 L24,12 L40,12 L40,26" fill="#C8EEF8" stroke="#4A9EC0" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M28,18 L36,18" stroke="#4A9EC0" stroke-width="2" stroke-linecap="round"/>
+              <!-- 郵送：開いた段ボール箱に服が入っているイラスト -->
+              <svg style="width:90px;height:90px;margin-bottom:0;" viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg">
+                <!-- 箱本体 -->
+                <rect x="15" y="65" width="90" height="58" rx="4" fill="white" stroke="#7B5E4A" stroke-width="2.5"/>
+                <!-- 箱前面のハート -->
+                <path d="M52,95 C52,91 56,88 60,92 C64,88 68,91 68,95 C68,99 60,105 60,105 C60,105 52,99 52,95 Z" fill="#E8968A"/>
+                <!-- 左フラップ -->
+                <path d="M15,65 L15,45 L55,55 L55,65" fill="#E8D4B8" stroke="#7B5E4A" stroke-width="2"/>
+                <!-- 右フラップ -->
+                <path d="M105,65 L105,45 L65,55 L65,65" fill="#D4C0A0" stroke="#7B5E4A" stroke-width="2"/>
+                <!-- たたまれた服（黄色） -->
+                <rect x="28" y="72" width="64" height="14" rx="3" fill="#F5D77A" stroke="#7B5E4A" stroke-width="1.5"/>
+                <!-- たたまれた服（青） -->
+                <rect x="28" y="86" width="64" height="12" rx="3" fill="#A8C8E8" stroke="#7B5E4A" stroke-width="1.5"/>
+                <!-- Tシャツ（上に浮いている） -->
+                <path d="M44,5 L36,18 L44,15 L44,38 L76,38 L76,15 L84,18 L76,5 Q70,2 60,2 Q50,2 44,5 Z" fill="white" stroke="#7B5E4A" stroke-width="2" stroke-linejoin="round"/>
               </svg>
             </span>
             <h3>郵送で寄付する</h3>
@@ -2170,12 +2180,23 @@ a { text-decoration: none; }
           </button>
           <button class="dcta dcta-sand" onclick="showDonate('boxlist')">
             <span class="dcta-icon" style="display:flex;justify-content:center;">
-              <svg class="svg-icon" style="margin-bottom:0;" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="28" width="44" height="26" rx="4" fill="#FFD4B0" stroke="#FF8C60" stroke-width="2"/>
-                <rect x="20" y="22" width="24" height="10" rx="3" fill="#FFE8D0" stroke="#FF8C60" stroke-width="2"/>
-                <path d="M28,26 L36,26" stroke="#FF8C60" stroke-width="2" stroke-linecap="round"/>
-                <path d="M32,34 L32,44" stroke="#FF8C60" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M26,40 L38,40" stroke="#FF8C60" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- 寄付BOX：手が服を箱に入れているイラスト -->
+              <svg style="width:90px;height:90px;margin-bottom:0;" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+                <!-- 箱本体 -->
+                <rect x="12" y="75" width="96" height="58" rx="4" fill="white" stroke="#7B5E4A" stroke-width="2.5"/>
+                <!-- 箱前面のハート -->
+                <path d="M52,105 C52,101 56,98 60,102 C64,98 68,101 68,105 C68,109 60,115 60,115 C60,115 52,109 52,105 Z" fill="#E8968A"/>
+                <!-- 投入口（スリット） -->
+                <rect x="32" y="72" width="56" height="7" rx="3.5" fill="#E0D0C0" stroke="#7B5E4A" stroke-width="1.5"/>
+                <!-- 手首〜手 -->
+                <path d="M48,8 C46,8 44,10 44,12 L44,48 C44,50 46,52 48,52 L72,52 C74,52 76,50 76,48 L76,12 C76,10 74,8 72,8 Z" fill="#F5E0CC" stroke="#7B5E4A" stroke-width="1.5"/>
+                <!-- 指（4本） -->
+                <rect x="46" y="4" width="7" height="22" rx="3.5" fill="#F5E0CC" stroke="#7B5E4A" stroke-width="1.5"/>
+                <rect x="56" y="2" width="7" height="24" rx="3.5" fill="#F5E0CC" stroke="#7B5E4A" stroke-width="1.5"/>
+                <rect x="66" y="4" width="7" height="22" rx="3.5" fill="#F5E0CC" stroke="#7B5E4A" stroke-width="1.5"/>
+                <!-- 服（サーモングリーンの丸まった衣類） -->
+                <ellipse cx="60" cy="66" rx="22" ry="10" fill="#8DBF7A" stroke="#5A7A4A" stroke-width="1.5"/>
+                <ellipse cx="60" cy="62" rx="18" ry="8" fill="#A0D090" stroke="#5A7A4A" stroke-width="1"/>
               </svg>
             </span>
             <h3>寄付ボックスに入れる</h3>
@@ -2628,8 +2649,8 @@ a { text-decoration: none; }
       <ul>
         <li>📍 茅ヶ崎市浜竹4-1-88</li>
         <li>📞 0467-58-6260</li>
-        <li>✉️ reyouth.tsubasa@gmail.com</li>
-        <li>🕐 火・水・金 10〜17時</li>
+        <li style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">✉️ reyouth.tsubasa@gmail.com</li>
+        <li>🕐 火・水・金 11〜17時</li>
       </ul>
     </div>
   </div>
