@@ -1039,7 +1039,7 @@ a { text-decoration: none; }
 }
 .info-row-value { font-size: 15px; color: var(--c-text); font-weight: 500; line-height: 1.75; }
 
-.box-list { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+.box-list { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
 .box-item {
   display: flex; align-items: center; gap: 16px;
   background: var(--c-surface);
@@ -1049,10 +1049,44 @@ a { text-decoration: none; }
   border: 1px solid var(--c-border);
   transition: var(--t);
 }
-.box-item:hover { transform: translateX(6px); box-shadow: var(--shadow-md); }
+.box-item:hover { transform: translateX(4px); box-shadow: var(--shadow-md); }
 .box-emoji { font-size: 28px; }
-.box-info h4 { font-size: 15px; font-weight: 700; color: var(--c-text); margin-bottom: 4px; }
-.box-info p { font-size: 13px; color: var(--c-text-3); }
+.box-info h4 { font-size: 16px; font-weight: 700; color: var(--c-text); margin-bottom: 4px; }
+.box-info p { font-size: 14px; color: var(--c-text-3); }
+/* 写真付きボックスアイテム */
+.box-item-photo {
+  background: var(--c-surface);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--c-border);
+  transition: var(--t);
+}
+.box-item-photo:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.box-photo-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.box-photo-body {
+  padding: 18px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.box-photo-badge {
+  background: linear-gradient(135deg, var(--c-teal), var(--c-ocean));
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+.box-photo-info h4 { font-size: 18px; font-weight: 700; color: var(--c-text); margin-bottom: 6px; }
+.box-photo-info p { font-size: 15px; color: var(--c-text-2); line-height: 1.7; }
 
 /* ================================================================
    SUPPORT PAGE
@@ -2272,11 +2306,14 @@ a { text-decoration: none; }
           以下の場所に寄付ボックスを設置しています。衣類をまとめてお持ちください。
         </p>
         <div class="box-list fi">
-          <div class="box-item">
-            <span class="box-emoji">♻️</span>
-            <div class="box-info">
-              <h4>RE:ユース　つばさ（店舗外）</h4>
-              <p>神奈川県茅ヶ崎市浜竹4-1-88 ／ 24時間いつでも受付中</p>
+          <div class="box-item-photo">
+            <img src="img/boxlist_tsubasa.jpg" alt="RE:ユースつばさ 寄付ボックス" class="box-photo-img">
+            <div class="box-photo-body">
+              <span class="box-photo-badge">24時間受付中</span>
+              <div class="box-photo-info">
+                <h4>RE:ユース　つばさ（店舗外）</h4>
+                <p>📍 神奈川県茅ヶ崎市浜竹4-1-88<br>店舗外に設置。いつでも投入できます。</p>
+              </div>
             </div>
           </div>
           <div class="box-item fi fi-d1">
