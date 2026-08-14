@@ -2118,6 +2118,30 @@ a { text-decoration: none; }
               </div>
             </div>
           </div>
+          <div class="blog-card fi" onclick="openHomeArticle(2)">
+            <div class="blog-thumb">🎉</div>
+            <div class="blog-body">
+              <span class="blog-tag-chip">お知らせ</span>
+              <h3>グランドオープン！！！</h3>
+              <p>ついにグランドオープンしました！買って寄付して繋がるリユースショップ『REユースつばさ』。ぜひ遊びに来てください☺️</p>
+              <div class="blog-meta-row">
+                <span>📅 2026年6月17日</span>
+                <span>✍️ スタッフ一同</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card fi" onclick="openHomeArticle(3)">
+            <div class="blog-thumb">👕</div>
+            <div class="blog-body">
+              <span class="blog-tag-chip" style="background:#e8a020;color:#fff;">イベント</span>
+              <h3>古着詰め放題開催します</h3>
+              <p>3日間限定！8/11・12・14開催。どれだけ入れても2,000円。メンズ・レディース・子ども服、組み合わせ自由。早い者勝ちです！</p>
+              <div class="blog-meta-row">
+                <span>📅 2026年8月10日</span>
+                <span>✍️ スタッフ一同</span>
+              </div>
+            </div>
+          </div>
           <!-- 今後の記事はここに追加 -->
         </div>
 
@@ -2744,6 +2768,40 @@ const ARTICLES = {
       <h2>ぜひお越しください</h2>
       <p>営業日は <strong>火・水・金曜日、11:00〜17:00</strong> です。神奈川県茅ヶ崎市浜竹4-1-88にて、皆さまのご来店をお待ちしています。近くにお越しの際はぜひ立ち寄ってみてください。</p>
       <p>引き続き、REユース つばさをよろしくお願いいたします。</p>
+    `
+  },
+  2: {
+    tag: 'お知らせ',
+    title: 'グランドオープン！！！',
+    date: '2026年6月17日',
+    author: 'スタッフ一同',
+    emoji: '🎉',
+    body: `
+      <p>ついにグランドオープンしました！<br>買って寄付して繋がるリユースショップ『REユースつばさ』。<br>ぜひ遊びに来てください☺️</p>
+      <div style="margin:24px auto;max-width:480px;text-align:center;">
+        <img src="img/blog_grandopen.png" alt="グランドオープンチラシ" style="width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);">
+      </div>
+      <p>皆さまのご来店を心よりお待ちしております。</p>
+    `
+  },
+  3: {
+    tag: 'イベント',
+    title: '古着詰め放題開催します',
+    date: '2026年8月10日',
+    author: 'スタッフ一同',
+    emoji: '👕',
+    body: `
+      <p>3日間限定で <strong>古着詰め放題</strong> を開催します！</p>
+      <div style="margin:24px auto;max-width:480px;text-align:center;">
+        <img src="img/blog_furugit.png" alt="古着詰め放題チラシ" style="width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);">
+      </div>
+      <h2>開催日程</h2>
+      <p><strong>8月11日（月・祝）・12日（火）・14日（木）</strong><br>営業時間：11:00〜17:00</p>
+      <h2>料金</h2>
+      <p>どれだけ入れても <strong>2,000円</strong>！<br>お得な小さめサイズ（1,000円）の袋詰めもあります。</p>
+      <h2>ラインナップ</h2>
+      <p>THE NORTH FACE・NIKE・adidas・RALPH LAUREN など、ブランド品も多数！<br>メンズ・レディース・子ども服、組み合わせ自由です。</p>
+      <p>なくなり次第終了！ <strong>早い者勝ちです</strong>。最新情報はインスタをチェック！</p>
     `
   }
 };
